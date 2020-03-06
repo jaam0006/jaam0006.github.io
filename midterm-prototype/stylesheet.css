@@ -1,0 +1,556 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********** Custom Styles ***********/
+
+html{ /**to make sure that our style is working we can start with main style in html **/
+    margin: 0px;
+    padding: 0px;
+    font-family: Raleway;
+    /**the main font of the page**/
+}
+
+.container{ /**the main style of the page**/
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.site-header{
+    background-color: #3C3B3A;
+    /**to change the color background**/
+}
+.banner{
+    display: flex;
+    flex-flow: wrap;
+    /**to put all the information together as a wrap **/
+    justify-content: space-between;
+    /**space between the content**/
+    margin: 0 140px;
+}
+.site-header img{ /**style the header imge with max width**/
+    max-width: 10%; 
+}
+.site-header ul{
+    list-style-type: none; /**to remove any style from the list item**/
+    float: right;
+}
+.site-header li{
+    display: inline-block;
+    margin: 0 8px;
+    height: 20px;
+}
+.site-header ul li a{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.main{
+    background-color: white;
+    display: grid;
+    margin: 0 140px;
+    padding-top: 230px;
+}
+h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+.main p{
+    font-size: 24px;
+}
+.main-icons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-icons img{
+    max-width: 50%;
+    justify-items: center;
+}
+.main-icons p{
+    font-size: 16px; /** to increase the size of thr content**/
+    color: #26A682;
+    text-align: center;
+}
+.main .bowiling img:hover{
+    opacity: 0.1;
+    transition: 0.3;
+}
+  
+
+button {
+    border-radius: 40px;
+    background-color: #26A682;
+    color: white;
+    padding: 7px;
+    width: 40%;
+    font-size: 20px;/** to increase the size of thr content**/
+    text-align: center; /**to center the content**/
+    margin-top: 15px;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+.butto:hover{
+    animation: heartbeat from 1.5s to 0.6s ease-in-out infinite both;
+    animation: heartbeat from 1.5s to 0.6s ease-in-out infinite both; 
+}
+
+.main img{
+    max-width: 700px;
+    width: 50%;
+    margin-left: 200px;
+    margin: 0 auto;
+    float: right; 
+    transition: opacity 2s, 
+    transform 5s 1s;  
+}
+
+.scroll{
+    float: center;
+    width: 10%;
+}
+
+/***Style the home body***/
+.body1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    padding: 38px 140px;
+    background: #F2F2F2;
+   
+}
+.body1 img{
+    max-width: 700px;
+    width: 100%;
+    height: 300px;  
+    margin-left: 35px; 
+}
+.body1 h2{
+    font-size: 40px; /** to increase the size of thr content**/
+    font-weight: bold;
+}
+.body1 h3{
+    color: #26A682; /**to change the color of the heading**/
+    font-size: 28px; /** to increase the size of thr content**/
+}
+.body1 .content{
+    margin-left: 70px;
+}
+.body button{
+    padding: 5px;
+    width: 45%;
+    font-size: 15px;/** to increase the size of thr content**/
+}
+.body2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    padding: 38px 140px;
+    background: #F2F2F2;
+}
+.body2 img{
+    max-width: 700px;
+    width: 100%;
+    height: 300px;  
+    margin-left: 35px; 
+}
+.body2 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.body2 h3{
+    color: #26A682;
+    font-size: 28px;
+}
+.body2 .content{
+    margin-left: 70px;
+}
+/***Style Simon part***/
+.body-one{
+    background-color: #3C3B3A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.body-one img{
+    max-width: 30%;
+    border-radius: 50%;
+    margin: 38px 140px;
+}
+
+.body-one h4{
+    font-size: 24px;  /***to make the font bigger**/
+    text-align: center; /**to center the item in middele**/
+    padding: 70px;
+    color: white; /**to change the color**/
+}
+.body-one p{
+    font-size: 15px; /***to make the font bigger**/
+    font-weight: bold; /***to make the font bold**/
+    text-align: center; /**to center the item in middele**/
+    padding: 70px 0;
+    color: white;
+}
+
+/***Style the footer***/
+footer{
+    background-color: #3C3B3A;
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+footer .icons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap
+    margin: 10px;
+}
+.top-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: inline-block;
+    z-index: 999;
+}
+
+/*********** About page ***********/
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 0 140px;
+    padding-top: 230px;
+    padding-bottom: 230px;
+}
+.about h1{
+    font-size: 65px;
+}
+.about img{
+    width: 100%;
+}
+.about p{
+    margin: 6px;
+}
+/***Style the section part***/
+
+.section{
+/*** i styled this part after i have watch this link https://www.google.com/search?sxsrf=ALeKk00B_KgkiwqGaB09h9zYNujngTX--A:1583391486075&q=how+to+add+color+on+image+in+css&spell=1&sa=X&ved=2ahUKEwiRlsX44ILoAhXXgXIEHWKvAB8QBSgAegQIDhAn&biw=1440&bih=688#kpvalbx=_AqNgXpaNH-ixytMPrI-8kAY32***/
+    background: rgba(38, 166, 130) url(images/about-1.jpeg);
+    color: white;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+
+}
+.color{
+    width: 100%;
+    height: 250px;
+    background: #26A682;
+    opacity: .5;
+    position: absolute;
+}
+.section p{
+    z-index: 1;
+    font-size: 67px;
+    font-weight: bold;
+    color: white;
+}
+.section1{
+    /*** i styled this part after i have watch this link https://www.google.com/search?sxsrf=ALeKk00B_KgkiwqGaB09h9zYNujngTX--A:1583391486075&q=how+to+add+color+on+image+in+css&spell=1&sa=X&ved=2ahUKEwiRlsX44ILoAhXXgXIEHWKvAB8QBSgAegQIDhAn&biw=1440&bih=688#kpvalbx=_AqNgXpaNH-ixytMPrI-8kAY32***/
+    background: rgba(38, 166, 130) url(images/services-1920_x_250.jpg);
+    color: white;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    }
+.color{
+    width: 100%;
+    height: 250px;
+    background: #26A682;
+    opacity: .5;
+    position: absolute;
+}
+.section1 p{
+    z-index: 1;
+    font-size: 67px;
+    font-weight: bold;
+    color: white;
+}
+    
+/***Style the about body***/
+.about-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 140px;
+
+}
+.about-body h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-body p{
+    font-size: 15px;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    padding: 38px 140px;
+    background: #F2F2F2;
+}
+.body img{
+    max-width: 700px;
+    width: 100%;
+    height: 300px;  
+    margin-left: 35px; 
+}
+.body h2{
+    font-size: 40px; /**to resize the font size of paragraph**/
+    font-weight: bold; /***to make the font bold**/
+}
+.body h3{
+    color: #26A682; /**chaning the color**/
+    font-size: 28px;  /**to resize the font size of paragraph**/
+}
+
+.body-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /**to add two columns in the section */
+    height: 350px;
+    margin: 38px 140px;
+}
+
+.body-two img{
+    max-width: 700px;
+    width: 100%;
+    height: 300px;   
+}
+.body-two .content{
+    margin-left: 35px;
+}
+.body-two h2{
+    font-size: 40px; /**to resize the font size of paragraph**/
+    font-weight: bold; /***to make the font bold**/
+}
+.body-two h3{
+    color: #26A682; /**changing the color***/
+    font-size: 28px; /**to resize the font size of paragraph**/
+}
+/***Style the news section***/
+.newsbar{
+    background-color: #3C3B3A; /**changing the background color***/
+    height: 100px;
+    display: flex;
+    align-items: center;  /**to center the items in middel**/
+}
+.newsbar p{
+    color: white; /**changing the color***/
+    text-align: center; /**to center the items in middel**/
+    font-size: 25px;/**to resize the font size of paragraph**/
+}
+.newsbar button{
+    width: 100%;
+    padding: 6px;
+}
+/***Style special following section***/
+.specialfollowing{
+    display: grid;
+    grid-template-rows: 1fr 1fr; /**to add two columns in the section */
+    margin: 38px 140px;
+}
+.specialfollowing h1{
+    text-align: center;/**to center the items in middel**/
+    font-size: 65px;
+}
+.specialfollowing img{
+    width: 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /**to add three columns in the section */
+    align-items: center; /**to center the items in middel**/
+    margin-right: 100px;
+}
+
+/***Style contact page***/
+.contact{
+    margin: 83px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /**to add two columns in the section */
+    grid-gap: 60px; /**to make space(gap) between items**/
+    height: 800px;
+}
+.contact h1{
+    font-size: 65px; /** to increase the size of thr content**/
+}
+.contact img{
+    max-width: 330px;
+    width: 100%;
+    align-items: center; /**to center the items in middel**/
+    margin: 60px;
+}
+.contact h4{
+    font-size: 40px; /** to increase the size of thr content**/
+    color: white;
+}
+.form-wrap{
+    background-color: #26A682;
+    border-radius: 10px; /**to shape the radius of border**/
+    height: 450px;
+    padding: 20px;
+    width: 70%;
+    color: white;
+}
+textarea,
+input { /**to resetyle the space of the customer information while they writting their info**/
+  display: block; /**to change the position of item**/
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 3px;
+  border-radius: 15px;
+}
+input[type="text"]{ /**to resetyle the space of the customer information while they writting their info**/
+    display: block;
+    margin-bottom: 8px;
+    width: 95%;
+}
+textarea{
+    resize: none; /**to stop the size from increasing (limit info)**/
+    height: 7rem; /**the box sizing**/
+    width: 95%;
+}
+.form-wrap button{
+    background-color: #3C3B3A;
+    width: 30%;
+    float: right;/**to change the position of item**/
+}
+/***Style location part***/
+.location{
+    margin: 83px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /**to add two columns in the section */
+    grid-gap: 60px;/** to make gap between the items**/
+}
+.location h1{
+    font-size: 65px; /** to increase the size of thr content**/
+}
+.location h2{
+    font-size: 20px; /** to increase the size of thr content**/
+}
+.location h4{
+    line-height: 30px; /** to make space between the line content of paragrapgh**/
+}
+
+/*** Media ***/
+@media screen and (min-width: 300px){
+  
+    .site-header img{
+        max-width: 5%; 
+    }
+   .body1{
+       grid-template-columns: 1fr 1fr;
+   }
+    .about-body{
+        grid-template-columns: repeat(1fr 1fr 1fr);
+    }
+    .form-wrap{
+        float: left;
+    }
+}
+    @keyframes heartbeat {
+        from {
+                  transform: scale(1);
+                  transform: scale(1);
+                  transform-origin: center center;
+                  transform-origin: center center;
+                  animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        10% {
+         transform: scale(0.91);
+                  transform: scale(0.91);
+          animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        17% {
+          transform: scale(0.98);
+                  transform: scale(0.98);
+          animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+        33% {
+      transform: scale(0.87);
+                  transform: scale(0.87);
+      animation-timing-function: ease-in;
+                  animation-timing-function: ease-in;
+        }
+        45% {
+      transform: scale(1);
+                  transform: scale(1);
+      animation-timing-function: ease-out;
+                  animation-timing-function: ease-out;
+        }
+      }
+      
+      
+
+
+@media screen and (min-width: 800px){
+    .specialfollowing{
+        grid-template-rows: 4;
+    }
+}

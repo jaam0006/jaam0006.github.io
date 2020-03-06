@@ -28,9 +28,10 @@ html{
 }
 
 .main{
-    display:grid;
+    display: grid; 
     grid-template-columns: 1fr 1fr;
-   
+    grid-gap: 40%;
+    margin: 5px;
 }
 
 h1{
@@ -43,15 +44,12 @@ p{
 }
 
 /***** Form *****/
-.form-wrap{
+.form-wrap{ 
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 4px 4px 0px gray;
     padding: 19px;
     font-family: montserrat;
-    width: 65%;
-    margin-bottom: 20px;
-    margin-left: 50px;
 }
 h2{
     font-family: montserrat;
@@ -100,8 +98,6 @@ footer{
     background-color: #fffd8c;
     padding: 2px;
     padding-left: 40px;
-    margin: 0 -1rem;
-
 }
 h5{
     font-family: montserrat;
@@ -111,18 +107,13 @@ h6{
     font-family: Montserrat;
     font-size: 16px;
 }
-.footer-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-grow: 1;
-}
 .footer-wrap input,
  textarea{
      display: flex;
      justify-content: flex-start;
-     width: 100%;
+     width: 30%;
      border-radius: 8px;
+     color: #57EEAB;
 }
 .footer-wrap button{
     background-color: #FF8480;
@@ -135,21 +126,22 @@ h6{
 }
 .icons{
    display: flex;
+   flex: wrap;
    justify-content: space-between;
-   flex-grow: 1;
-   width: 100%; 
-   margin-bottom: 5px;
 }
 
 /****** media ******/
 @media screen and (min-width: 400px){
-   .main{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-   }
+    .main{
+        display: block;
+    }
+    .form-wrap{
+       height: auto;
+    }
     h1{
         font-size: 50px;
     }
-   
-    
+    .container{
+        z-index: -1;
+    }
 }

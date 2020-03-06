@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--We always start our HTML doucment with DOCTYPE tag to define the docemont-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prototype</title>
+     <!--title tag for the name of the page-->
+    <link rel="stylesheet" href="stylesheet.css">
+      <!--Link the page with the css style sheet-->
+    <link rel="stylesheet" href="https://fontawesome.com/icons/arrow-circle-up?style=solid">
+    <!--Linke the page with the icons page-->
+</head>
+<body>
+    
+    <div class="container">
+         <!--the main body for the website-->
+        <header class="site-header">
+            <div class="banner">
+                <img src="images/logo.svg" alt="logo">
+                <nav role="navigation">
+                <!--nav tag is to connect the page with others-->
+                    <ul>
+                    <!--ul tag is for list of items-->
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="contact">
+            <div>
+                <h1>We Want to Hear From You</h1>
+                <p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+                <!--p tag to write the content of the website-->
+                <img src="images/contact-img.svg" alt="contact">
+                 <!--img to add image and alt for the name of image if there is some broblem-->
+            </div>
+            <!--Form section for comments or any question-->
+            <section class="form-wrap">
+                <form action="somePHPPage.php" method="POST" id="htmlForm">
+                <h4>Contact us.</h4>
+                <div>
+                    <label for="name">Full Name</label>
+                    <!--label tag to insert the information of the customers with names-->
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                </div>
+                <div>
+                    <label for="student number">Student Number</label>
+                    <!--label tag to insert the information of the customers with names or other personal information-->
+                    <input type="text" name="Student Number" id="Student Number" placeholder="Student Number">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <!--label tag to insert the information of the customers with names or other personal information-->
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                 <!--button tag to response with the label contents we have to click on it to take us to more information or other pages or to subscribe the information from the form-->
+                </form>
+            </section>
+        </div>
+
+        <div class="location">
+            <div>
+                <h1>Our Location.</h1>
+                <h2>Algonquin College Students' Association</h2>
+                <h4>Monday to Friday – 8:30am to 6:00pm</h4>
+                <h4>1385 Woodroffe Avenue (E114)</h4>
+                <h4>Ottawa, Ontario</h4>
+                <h4>K2G 1V8</h4>
+                <h4>(613) 727-4723 x7711</h4>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22434.367609880253!2d-75.74922865!3d45.3428378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce072014490147%3A0x96be65c729a98488!2sCollege%20Square%20Mall!5e0!3m2!1sen!2sca!4v1576268523882!5m2!1sen!2sca" width="450" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <!--the link of google map-->
+        </div>
+
+        <footer>
+            <p>Follow us</p>
+            <div class="icons">
+                <img src="icons/facebook.svg" alt="facebook">
+                <img src="icons/instagram.svg" alt="instagram">
+                <img src="icons/twitter.svg" alt="twitter">
+                <img src="icons/youtube.svg" alt="youtube">
+            </div>
+            <div>
+            <!--to back to the top of the page-->
+                <a href="#top" class="top-btn" title="top">
+                <img src="icons/arrow.svg" alt="back to top">
+                <i class="fas fa-arrow-circle-up"></i>
+                <h5>back to top</h5>
+            </div>  
+        </footer>
+
+    </div>
+</body>
+</html>
