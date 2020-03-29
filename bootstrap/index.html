@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Bootstrap This!</title>
+    </head>
+    <body class="bg-dark">
+        <div class="container">
+            <!-- Navigation bar-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand mr-auto" href="#">
+                <img src="img/1200px-Bootstrap_logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="bootstrap">ootStrap</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <div class="ml-auto navbar-nav">
+                        <a href="#" class="nav-link active">Home</a>
+                        <a href="#" class="nav-link active">About</a>
+                    </div>
+                </div>
+            </nav>
+            <!--Image-->            
+            <div class="header">
+                <header style="height: 10vh;"></header>
+                <div class="carousel-inner">
+                    <div class="caroisel-item-active">
+                        <img src="img/unnamed.png" alt="bootstrap" class="rounded" width="100%">
+                        <div class="carousel-caption">
+                            <h3 class="display-4">BootStrap</h3>
+                            <button type="button" class="btn btn-dark ">Get Start</button>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+            <!--Jumbotron-->
+            <div class="jumbotron text-center p-3 mb-2 bg-secondary text-white" style="margin-bottom:1px">
+                <h1 class="text-dark">What is BootStrap</h1>
+                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p> 
+            </div>
+            
+            <!--Main-->
+            <div class="main" style="margin-top: 30px;">
+                <h2 class="font-weight-bold font-italic text-warning" style="margin-bottom:10px;">About BootStrap</h2>
+               <div>
+                    <div style="margin-top: 30px;">
+                        <h3 class="text-info">Open Source</h3>
+                        <p class="text-white">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col-sm" style="margin: 10px;">
+                                <div class="card bg-secondary" style="width: 8rem;">
+                                    <img src="img/806958_html_512x512.png" class="card-img-top" alt="html" >
+                                    <div class="card-body">
+                                        <h3 class="card-text font-weight-bold text-danger text-center"> HTML</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm"  style="margin: 10px;">
+                                <div class="card bg-secondary" style="width: 8rem;" style="margin-top: 50px;">
+                                    <img src="img/806967_css_512x512.png" class="card-img-top" alt="html" >
+                                    <div class="card-body">
+                                        <h3 class="card-text font-weight-bold text-primary text-center"> CSS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm"  style="margin: 10px;">
+                                <div class="card bg-secondary" style="width: 8rem;">
+                                    <img src="img/Filetype - JS.png" class="card-img-top" alt="html" >
+                                    <div class="card-body">
+                                        <h3 class="card-text font-weight-bold text-warning text-center"> JS</h3>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-lg-6">
+                        <h3 class="text-info"style="margin-top: 50px;">Mobile First</h3>
+                        <p class="text-white">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+                        <a href="#" class="btn btn-outline-warning">Learn More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/bootstrap.png" alt="mobile" width="100%" style="margin-top: 50px;">
+                    </div>
+                </div>
+                <div style="margin-top: 50px;">
+                    <h3 class="text-info">Components Library</h3>
+                    <p class="text-white">Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
+                </div>    
+                <!--Modal-->
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#myModal">Open modal
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">What is Modal?</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">The Modal component is a dialog box/popup window that is displayed on top of the current page.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div>    
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <!--Content-->
+            <section class="content" >
+                <h2 class="font-weight-bold font-italic text-warning" style="margin-top: 50px;">Components</h2>
+                <p class="text-white $font-size:16px;">Bootstrap comes with nearly two dozen components that are ready to use right out of the box.</p>
+                <ul class="List">
+                    <!--Alert-->
+                    <li class="text-info" style="margin-bottom: 20px;">Alerts</li>
+                    <p class="text-white">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+                    <div class="row" >
+                        <div class="col-md-8 alert alert-primary">Primary!</div>
+                        <div class="col-6 col-md-4 alert alert-secondary">Secondary!</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 alert alert-success">Success!</div>
+                        <div class="col-6 col-md-4 alert alert-danger">Dander!</div>
+                        <div class="col-6 col-md-4 alert alert-warning">Warning!</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 alert alert-info">Info!</div>
+                        <div class="col-6 alert alert-light">Light!</div>
+                    </div>
+
+                    <!--Media Object-->
+                    <li class="text-info" style="margin-bottom: 20px;">Media Object</li>
+                    <p class="text-white">Documentation and examples for Bootstrap’s media object to construct highly repetitive components like blog comments, tweets, and the like.</p>
+                    <div class="media mt-3">
+                        <img src="img/B3.png" alt="B3" style="width:100px" class="align-self-center mr-3 rounded">
+                        <div class="media-body">
+                            <p class="text-white" style="margin-top: 25px">Bootstrap is a free CSS framework. Bootstrap 3 is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes.</p>
+                        </div>
+                    </div>
+                    <div class="media mt-3">
+                            <img src="img/B4.png" alt="B3" style="width:100px" class="align-self-center mr-3 rounded">
+                            <div class="media-body">
+                                <p class="text-white" style="margin-top: 25px">Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness. However, Internet Explorer 9 and down is not supported.</p>
+                            </div>
+                        </div>
+
+                    <!--Form-->
+                    <li class="text-info" style="margin-top: 20px;">Form</li>
+                    <p class="text-white" style="margin-top: 20px;">Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
+                    <h3 class="text-warning" style="margin-top: 20px;">To Sign Up..</h3>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                                <label for="fullname" class="text-white">Full Name:</label>
+                                <input type="fullname" class="form-control" id="fullname" placeholder="Enter full name" name="fullname">
+                            </div>
+                        <div class="form-group">
+                            <label for="email" class="text-white">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" class="text-white">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label text-info">
+                            <input class="form-check-input " type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </form>
+                </ul>
+            </section>
+
+            <div class="p-3 mb-2 bg-secondary  text-center" style="margin-bottom:0"> 
+                <p class="text-white">CopyRight@ Alaa,2020</p>
+            </div>
+           
+        
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
+
