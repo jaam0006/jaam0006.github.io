@@ -1,0 +1,17 @@
+
+
+.contact{
+    background-image: url(img/photo-1452587925148-ce544e77e70d.jpeg);
+    height: 100%;
+    width: 100%;
+    /*to set a background image and everything will go over the img*/
+   
+    /* to stop the image from repeating if the image size is small*/
+  
+  
+}
+
+.fit-image{
+    height: 100%;
+    width: 100%;
+}

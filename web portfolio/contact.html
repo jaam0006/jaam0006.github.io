@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Cardo&family=Spectral:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Web Portfolio</title>
+    </head>
+
+    <body>
+        <div class="container-fluid" width="100%">
+            <!-- Navigation bar-->
+            <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+                    <a class="navbar-brand mr-auto" href="#">
+                        <img src="img/Image 1.png" width="55" height="50"     class="d-inline-block align-top rounded" alt="logo"></a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse">
+                        <div class="ml-auto navbar-nav">
+                            <a href="index.html" class="nav-link active text-warning" style="font-family: 'Amarante', cursive;">Home</a>
+                            <a href="about.html" class="nav-link active text-warning" style="font-family: 'Amarante', cursive;">About</a>
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-warning" style="font-family: 'Amarante', cursive;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Portfolio
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a href="videos.html" class="nav-link active text-warning" style="font-family: 'Amarante', cursive;">Video</a>
+                                        <a href="photos.html" class="nav-link active text-warning" style="font-family: 'Amarante', cursive;">Photo</a>    
+                                    </div>
+                            </li> 
+                            <a href="contact.html" class="nav-link active text-warning" style="font-family: 'Amarante', cursive;">Contact</a>
+                        </div>
+                    </div>
+            </nav>
+
+            <!--Contact-->
+            <div class="contact" style="margin-top: 100px;">
+                <h1 class="text-white text-center" style="font-family: 'Cardo', serif;">Get in Touch</h1>
+                <div class="row" style="margin: 50px; padding-left: 30px;">
+                    <div class="col-sm-6">
+                        <div style="font-family: 'Cardo', serif; margin-top: 30px;">
+                            <h4 class="text-white" style="font-family: 'Spectral', serif;">Email: Alaa.ja@hotmail.com </h4>
+                            <h4 class="text-white" style=" font-family: 'Spectral', serif;">Phone Number: 613-123-4567 </h4>
+                            <h4 class="text-white" style=" font-family: 'Spectral', serif;">Facebook </h4>
+                            <h4 class="text-white" style="font-family: 'Spectral', serif;">YouTube </h4>
+                            <h4 class="text-white" style=" font-family: 'Spectral', serif;">Instgram </h4>         
+                        </div>
+                    </div> 
+                    <div class="col-sm-6">
+                        <h2 class="text-white text-center" style="margin-top: 20px;font-family: 'Spectral', serif;">Book your Shoot today</h2>
+                        <form id="contact-form" method="post" action="contact.php" role="form">                            
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name"></label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Firstname is required." style="background-color:#BAA387;">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_Email"></label>
+                                            <input id="form_email" type="text" name="email" class="form-control" placeholder="Email" required="required" data-error="Email is required." style="background-color:#BAA387;">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_phone"></label>
+                                            <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="Phone Number" required="required" data-error="Valid email is required." style="background-color:#BAA387;">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_date"></label>
+                                            <input id="form_datw" type="tel" name="date" class="form-control" placeholder="Date" style="background-color:#BAA387;">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group" >
+                                            <label for="form_message" ></label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message." style="background-color:#BAA387;"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-warning text-white btn-send btn-lg" value="Send message" style="font-family: 'Amarante', cursive; margin:20px; "> 
+                                    </div>
+                                </div> 
+                            </div>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+            
+            <!--Footer-->
+            <div class="p-3 mb-2 bg-success text-center" style="margin-top:30"> 
+                    <div class="icon">
+                        <a href="#top" class="top-btn" title="top">
+                            <i class="fas fa-arrow-circle-up"></i></a>
+                        <a href="#" title="facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lelo_612/?hl=en" title="instgram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="text-white" style="font-family: 'Amarante', cursive;">CopyRight@ Alaa,2020</h5>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
